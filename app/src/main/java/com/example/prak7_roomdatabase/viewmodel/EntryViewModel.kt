@@ -5,6 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import com.example.prak7_roomdatabase.repository.RepositoriSiswa
+import com.example.prak7_roomdatabase.room.Siswa
 
 class EntryViewModel (private val repositoriSiswa: RepositoriSiswa): ViewModel() {
     var uiStateSiswa by mutableStateOf(UIStateSiswa())
@@ -33,4 +34,11 @@ data class DetailSiswa(
     val alamat: String = "",
     val telpon: String = "",
 
+)
+
+fun DetailSiswa.toSiswa(): Siswa = Siswa(
+    id = id,
+    nama = nama,
+    alamat = alamat,
+    telpon = telpon
 )
