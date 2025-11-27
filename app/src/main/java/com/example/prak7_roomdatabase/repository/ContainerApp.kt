@@ -1,5 +1,6 @@
 package com.example.prak7_roomdatabase.repository
 
+import android.app.Application
 import android.content.Context
 import com.example.prak7_roomdatabase.room.DatabaseSiswa
 
@@ -14,5 +15,11 @@ class ContainerDataApp(private val context: Context):
             DatabaseSiswa.getDatabase(context).siswaDao()
         )
     }
+}
+
+class AplikasiSiswa : Application() {
+
+    lateinit var container: ContainerApp
+
 }
 
