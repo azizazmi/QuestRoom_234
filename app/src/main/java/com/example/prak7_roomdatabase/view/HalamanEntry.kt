@@ -28,6 +28,7 @@ import com.example.prak7_roomdatabase.R
 import com.example.prak7_roomdatabase.view.route.DestinasiEntry
 import com.example.prak7_roomdatabase.viewmodel.DetailSiswa
 import com.example.prak7_roomdatabase.viewmodel.EntryViewModel
+import com.example.prak7_roomdatabase.viewmodel.UIStateSiswa
 import com.example.prak7_roomdatabase.viewmodel.provider.PenyediaViewModel
 import kotlinx.coroutines.launch
 
@@ -69,7 +70,7 @@ fun EntrySiswaScreen(
 
 @Composable
 fun EntrySiswaBody(
-    uiStateSiswa: uiStateSiswa,
+    uiStateSiswa: UIStateSiswa,
     onSiswaValueChange: (DetailSiswa) -> Unit,
     onSaveClick: () -> Unit,
     modifier: Modifier = Modifier
