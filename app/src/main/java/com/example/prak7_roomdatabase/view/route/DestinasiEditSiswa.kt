@@ -2,7 +2,7 @@ package com.example.prak7_roomdatabase.view.route
 
 import com.example.prak7_roomdatabase.R
 
-object DestinasiEditSiswa {
+object DestinasiEditSiswa: DestinasiNavigasi {
     override val route = "item_edit"
     override val titleRes = R.string.edit_siswa
     const val itemIdArg = "idSiswa"
